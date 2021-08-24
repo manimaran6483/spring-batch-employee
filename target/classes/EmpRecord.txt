@@ -1,0 +1,34 @@
+EmpId,FirstName,LastName,Gender,Email,FatherName,MotherName,PhoneNo,City,State,Zip
+850297,Shawna,Buck,F,shawna.buck@gmail.com,Rosario Buck,Keisha Buck,702-771-7149,Las Vegas,NV,89128
+304721,Nathaniel,Burke,M,nathaniel.burke@walmart.com,Derrick Burke,Phoebe Burke,231-765-6923,Irons,MI,49644
+412317,Elisabeth,Foster,F,elisabeth.foster@gmail.com,Irwin Foster,Janie Foster,270-749-4774,Lexington,KY,40501
+621375,Briana,Lancaster,F,briana.lancaster@yahoo.com,Jeffrey Lancaster,Shelby Lancaster,219-623-8216,Munster,IN,46321
+787549,Estella,Potter,	F,estella.potter@gmail.com,Booker Potter,Katelyn Potter,907-677-8486,Fairbanks,	AK,99709
+520092,Lamont,Woods,M,lamont.woods@hotmail.com,Ignacio Woods,Beulah Woods,236-597-8196,Purcellville,VA,20134
+795934,Melinda,Lopez,F,melinda.lopez@hotmail.com,Leroy Lopez,Edna Lopez,210-396-1493,Stowell,TX,77661
+159108,Shanna,Silva,F,shanna.silva@gmail.com,Eliseo Silva,Minnie Silva,236-373-6712,Herndon,VA,20171
+330816,Jasmine,Freeman,F,jasmine.freeman@gmail.com,Hans Freeman,Renee Freeman,423-796-1535,Ocoee,TN,37361
+532002,Madge,Sargent,F,madge.sargent@aol.com,Luke Sargent,Judy Sargent,217-910-0644,Springfield,IL,62712
+612850,Bethany,Cline,F,bethany.cline@yahoo.ca,Eddie Cline,Deanne Cline,215-970-5881,Montgomery,PA,17752
+483751,Reid,Randolph,M,reid.randolph@gmail.com,Grover Randolph,Erika Randolph,209-996-8902,Pacoima,CA,91331
+252938,Antoine,Wiley,M,antoine.wiley@verizon.net,Frances Wiley,Naomi Wiley,503-361-6334,Canby,OR,97013
+966375,Mathew,Hodge,M,mathew.hodge@hotmail.com,Prince Hodge,Regina Hodge,209-294-7430,Van Nuys,CA,91404
+707520,Bernardo,Austin,M,bernardo.austin@hotmail.com,Lowell Austin,Shauna Austin,319-716-4227,Knoxville,IA,50197
+673049,Cole,Jensen,M,cole.jensen@aol.com,Terence Jensen,Belinda Jensen,405-495-4201,Oklahoma City,OK,73184
+265124,Tonia,Burns,F,tonia.burns@gmail.com,Johnathan Burns,Brianna Burns,209-631-5424,Friant,CA,93626
+300693,Tod,Holcomb,M,tod.holcomb@outlook.com,Gail Holcomb,Beulah Holcomb,240-364-4220,Patuxent River,MD,20670
+369712,Yesenia,Guerrero,F,yesenia.guerrero@btinternet.com,Alfred Guerrero,Lori Guerrero,240-505-5321,Reisterstown,MD,21136
+913253,Carey,Ferrell,M,carey.ferrell@yahoo.com,Robby Ferrell,Christi Ferrell,212-495-4523,New Baltimore,NY,12124
+308617,Aileen,Blanchard,F,aileen.blanchard@gmail.com,Kurt Blanchard,Virgie Blanchard,308-788-3843,Herman,NE,68029
+766783,Marta,Cervantes,F,marta.cervantes@gmail.com,Fletcher Cervantes,Hazel Cervantes,206-858-9176,Hoquiam,WA,98550
+959506,Arthur,Holloway,M,arthur.holloway@aol.com,Reggie Holloway,Rosemarie Holloway,225-832-0451,Dodson,LA,71422
+513011,Tara,Forbes,F,tara.forbes@gmail.com,Davis Forbes,Elvia Forbes,319-249-4281,Sheldon,IA,51201
+290808,Josef,Griffin,M,josef.griffin@yahoo.com,Dee Griffin,Leonor Griffin,209-441-9130,Sacramento,CA,95830
+253588,Keri,Slater,F,keri.slater@apple.com,Tyler Slater,Jeanne Slater,207-842-2965,Friendship,ME,4547
+865628,Desmond,Wynn,M,desmond.wynn@hotmail.com,Louis Wynn,Marianne Wynn,209-319-3405,Fresno,CA,93888
+583924,Adrienne,Puckett,F,adrienne.puckett@verizon.net,Fletcher Puckett,Nicole Puckett,209-235-0390,Burlingame,CA,94012
+932453,Beatriz,Knowles,F,beatriz.knowles@gmail.com,Jackson Knowles,Ava Knowles,406-923-1326,Arlee,MT,59821
+432168,Jermaine,Sykes,M,jermaine.sykes@apple.com,Garth Sykes,Sheila Sykes,239-204-8747,Welaka,FL,32193
+463784,Scott,Best,M,scott.best@cox.net,Chase Best,Wendi Best,307-504-4165,Bairoil,WY,82322
+721098,Isabel,Espinoza,F,isabel.espinoza@gmail.com,Kennith Espinoza,Louisa Espinoza,405-622-8606,Tupelo,OK,74572
+392678,Marcelino,Kinney,M,marcelino.kinney@gmail.com,Alexander Kinney,Elizabeth Kinney,479-929-0873,Little Rock,AR,72208
