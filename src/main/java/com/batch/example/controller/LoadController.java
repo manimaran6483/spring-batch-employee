@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/load")
 public class LoadController {
 
 	@Autowired
@@ -28,7 +27,7 @@ public class LoadController {
 	@Autowired
 	Job job;
 	
-	@GetMapping
+	@GetMapping("/start")
 	public BatchStatus load() throws JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException, JobParametersInvalidException {
 		
 		Map<String, JobParameter> maps = new HashMap<>();
@@ -38,4 +37,11 @@ public class LoadController {
 		
 		return jobExecution.getStatus();
 	}
+	
+	@GetMapping("/stop")
+	public String stop() {
+		System.exit(0);
+		return "Stoped";
+	}
+	
 }

@@ -59,6 +59,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>springbatch</finalName>
 	</build>
 
 	<artifactId>batch-example-1</artifactId>
