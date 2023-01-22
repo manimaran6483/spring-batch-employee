@@ -51,7 +51,7 @@ public class SpringBatchConfig {
 //		return flatFileItemReader;
 		System.out.println("Inside Reader()");
 		return new FlatFileItemReaderBuilder<ReaderEmployee>().name("TXT-Reader")
-				.resource(new FileSystemResource("src/main/resources/EmpRecord.txt"))
+				.resource(new FileSystemResource("EmpRecord.txt"))
 				.linesToSkip(1)
 				.delimited() 
 				.names(new String[] {"EmpId","FirstName","LastName","Gender",
