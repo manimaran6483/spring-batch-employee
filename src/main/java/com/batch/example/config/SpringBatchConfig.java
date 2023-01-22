@@ -21,15 +21,16 @@ import com.batch.example.model.*;
 @EnableBatchProcessing
 public class SpringBatchConfig {
 
+
 	@Bean
 	public Job job(JobBuilderFactory jobBuilderFactory,
 			StepBuilderFactory stepBuilderFactory,
-			ItemReader<ReaderEmployee> itemReader,
-			ItemProcessor<ReaderEmployee, Employee> itemProcessor,
-			ItemWriter<Employee> itemWriter){
+			ItemReader<String> itemReader,
+			ItemProcessor<String, String> itemProcessor,
+			ItemWriter<String> itemWriter){
 		
 		Step step= stepBuilderFactory.get("File-load-step-1")
-				.<ReaderEmployee,Employee> chunk(10)
+				.<String,String> chunk(1)
 				.reader(itemReader)
 				.processor(itemProcessor)
 				.writer(itemWriter)
@@ -41,26 +42,6 @@ public class SpringBatchConfig {
 				.build();
 	}
 	
-	@Bean
-	public FlatFileItemReader<ReaderEmployee> itemReader(){
-//		FlatFileItemReader<ReaderEmployee> flatFileItemReader = new FlatFileItemReader<>();
-//		flatFileItemReader.setResource(new FileSystemResource("src/main/resources/EmpRecords.txt"));
-//		flatFileItemReader.setName("TXT-Reader");
-//		flatFileItemReader.setLinesToSkip(1);
-//		flatFileItemReader.setLineMapper(lineMapper());
-//		return flatFileItemReader;
-		System.out.println("Inside Reader()");
-		return new FlatFileItemReaderBuilder<ReaderEmployee>().name("TXT-Reader")
-				.resource(new FileSystemResource("EmpRecord.txt"))
-				.linesToSkip(1)
-				.delimited() 
-				.names(new String[] {"EmpId","FirstName","LastName","Gender",
-						"Email","FatherName","MotherName","PhoneNo","City","State","Zip"})
-				.fieldSetMapper(new BeanWrapperFieldSetMapper<ReaderEmployee>() {{
-					setTargetType(ReaderEmployee.class);
-				}})
-				.build();
-	}
 	
 //	@Bean 
 //	public LineMapper<ReaderEmployee> lineMapper(){

@@ -9,7 +9,7 @@ import com.batch.example.model.ReaderEmployee;
 import com.batch.example.model.Employee;
 
 @Component
-public class Processor implements ItemProcessor<ReaderEmployee, Employee>{
+public class Processor implements ItemProcessor<String, String>{
 
 //	private static final Map<String, String> Dept_names = new HashMap<>();
 //	
@@ -20,17 +20,10 @@ public class Processor implements ItemProcessor<ReaderEmployee, Employee>{
 //	}
 
 	@Override
-	public Employee process(ReaderEmployee emp) throws Exception {
-		
-		String fullname = emp.getFname() + " " + emp.getLname();
-		String address = emp.getCity()+" " + emp.getState()+" " +emp.getZip();
-		String gender = emp.getGender().equalsIgnoreCase("M") ? "Male" : "Female";
-		
-		Employee employee = new Employee(emp.getEmpid(),fullname,gender,emp.getEmail(),emp.getFathername(),emp.getMothername()
-				,emp.getPhnno(),address, new Date());
+	public String process(String data) throws Exception {
 		
 		
-		return employee;
+		return data.toUpperCase();
 	}
 
 	
