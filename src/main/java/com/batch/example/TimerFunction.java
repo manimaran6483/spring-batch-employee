@@ -31,7 +31,7 @@ public class TimerFunction {
         
         context.getLogger().info("Max memory : " + runtime.maxMemory()/mb);
         
-        System.exit(SpringApplication.exit(SpringApplication.run(ExampleApplication.class, new String[0])));
+        SpringApplication.exit(SpringApplication.run(ExampleApplication.class, new String[0]));
         
         return "from Timer: \"" + timerInfo + "\"";
     }
