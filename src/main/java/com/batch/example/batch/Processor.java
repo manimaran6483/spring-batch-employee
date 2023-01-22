@@ -29,9 +29,7 @@ public class Processor implements ItemProcessor<ReaderEmployee, Employee>{
 		Employee employee = new Employee(emp.getEmpid(),fullname,gender,emp.getEmail(),emp.getFathername(),emp.getMothername()
 				,emp.getPhnno(),address, new Date());
 		
-		System.out.println(String.format("Converted from [%s] to [%s]", emp.getGender()	,gender));
-		System.out.println(String.format("Converted from [%s] to [%s]", emp.getCity()+"," + emp.getState()+" " +emp.getZip()	,address));
-		System.out.println(String.format("Converted from [%s] to [%s]", emp.getFname() + "," + emp.getLname()	,fullname));
+		
 		return employee;
 	}
 
