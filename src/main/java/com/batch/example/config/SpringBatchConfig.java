@@ -43,22 +43,5 @@ public class SpringBatchConfig {
 	}
 	
 	
-//	@Bean 
-//	public LineMapper<ReaderEmployee> lineMapper(){
-//		
-//		DefaultLineMapper<ReaderEmployee> defaultLineMapper = new DefaultLineMapper<>();
-//		DelimitedLineTokenizer lineTokenizer = new DelimitedLineTokenizer();
-//		
-//		lineTokenizer.setDelimiter(",");;
-//		lineTokenizer.setNames("EmpId","FirstName","LastName","Gender",
-//				"Email","FatherName","MotherName","PhoneNo","City","State","Zip");
-//		
-//		BeanWrapperFieldSetMapper<ReaderEmployee> fieldSetMapper = new BeanWrapperFieldSetMapper<>();
-//		fieldSetMapper.setTargetType(ReaderEmployee.class);
-//		
-//		defaultLineMapper.setLineTokenizer(lineTokenizer);
-//		defaultLineMapper.setFieldSetMapper(fieldSetMapper);
-//		
-//		return defaultLineMapper;
-//	}
+
 }

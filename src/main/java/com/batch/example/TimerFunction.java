@@ -1,5 +1,7 @@
 package com.batch.example;
 
+import java.util.Date;
+
 import org.springframework.boot.SpringApplication;
 
 import com.microsoft.azure.functions.ExecutionContext;
@@ -12,7 +14,7 @@ import com.microsoft.azure.functions.annotation.TimerTrigger;
 public class TimerFunction {
    
     @FunctionName("Timer") // Runs every minute
-    public String run(@TimerTrigger(name="timerInfo",schedule="0 * * * * *") String timerInfo,
+    public void run(@TimerTrigger(name="timerInfo",schedule="0 * * * * *") String timerInfo,
     		final ExecutionContext context) {
         context.getLogger().info("Timer Trigger Input : " + timerInfo);
 
@@ -31,8 +33,11 @@ public class TimerFunction {
         
         context.getLogger().info("Max memory : " + runtime.maxMemory()/mb);
         
+        context.getLogger().info("Batch Started at : " + new Date(System.currentTimeMillis()));
+        
         SpringApplication.exit(SpringApplication.run(ExampleApplication.class, new String[0]));
         
-        return "from Timer: \"" + timerInfo + "\"";
+        context.getLogger().info("Batch Ended at : " + new Date(System.currentTimeMillis()));
+        
     }
 }

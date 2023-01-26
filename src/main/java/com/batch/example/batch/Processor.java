@@ -1,12 +1,10 @@
 package com.batch.example.batch;
 
-import java.util.Date;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.stereotype.Component;
-
-import com.batch.example.model.ReaderEmployee;
-import com.batch.example.model.Employee;
 
 @Component
 public class Processor implements ItemProcessor<String, String>{
@@ -19,9 +17,11 @@ public class Processor implements ItemProcessor<String, String>{
 //		Dept_names.put("003", "Accounts");
 //	}
 
+	private static final Logger LOGGER = LogManager.getLogger(Processor.class);
+	
 	@Override
 	public String process(String data) throws Exception {
-		
+		LOGGER.info("Inside Processor");
 		
 		return data.toUpperCase();
 	}
