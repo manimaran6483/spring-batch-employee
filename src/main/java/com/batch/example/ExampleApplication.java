@@ -15,7 +15,7 @@ public class ExampleApplication {
 			System.out.println("Class of arg : " + args[i].getClass());
 		}*/
 		
-		//System.exit(SpringApplication.exit(SpringApplication.run(ExampleApplication.class, args)));
+		System.exit(SpringApplication.exit(SpringApplication.run(ExampleApplication.class, args)));
 		//System.exit(0);
 	}
 }

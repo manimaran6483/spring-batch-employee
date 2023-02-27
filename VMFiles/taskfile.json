@@ -1,0 +1,14 @@
+{
+  "id": "AzPoolTask",
+  "commandLine": "bash -c 'echo hello'",
+  "containerSettings": {
+    "imageName": "manimaran6483/springbatch:1.0",
+    "containerRunOptions": "--rm"
+  },
+  "userIdentity": {
+    "autoUser": {
+      "scope": "task",
+      "elevationLevel": "nonadmin"
+    }
+  }
+}
